@@ -3,7 +3,7 @@ function getPlayerChoice() {
   return userInput.toLowerCase();
 }
 
-getPlayerChoice
+getPlayerChoice()
 
 function getComputerChoice() {
   const choices = ['rock', 'paper', 'scissors'];
