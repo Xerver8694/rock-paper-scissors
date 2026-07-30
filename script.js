@@ -45,4 +45,4 @@ function playRound(humanChoice, computerChoice) {
 const humanChoice = getPlayerChoice();
 const computerChoice = getComputerChoice();
 
-playRound(humanChoice, computerChoice)
+playRound(humanChoice, computerChoice);
