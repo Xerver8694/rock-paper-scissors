@@ -45,4 +45,24 @@ function playRound(humanChoice, computerChoice) {
 const humanChoice = getPlayerChoice();
 const computerChoice = getComputerChoice();
 
-playRound(humanChoice, computerChoice);
+function playGame() {
+  for (let i = 0; i < 5; i++) {
+    console.log(`--- ROUND ${i + 1} ---`);
+    
+    const humanSelection = getPlayerChoice();
+    const computerSelection = getComputerChoice();
+    
+    playRound(humanSelection, computerSelection);
+  }
+
+    console.log("=== GAME OVER ===");
+  if (humanScore > computerScore) {
+    console.log(`Final Result: You won the match ${humanScore} to ${computerScore}!`);
+  } else if (computerScore > humanScore) {
+    console.log(`Final Result: The computer won the match ${computerScore} to ${humanScore}!`);
+  } else {
+    console.log(`Final Result: It's a true overall tie at ${humanScore} points each.`);
+  }
+}
+
+playGame();
