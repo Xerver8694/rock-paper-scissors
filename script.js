@@ -1,3 +1,6 @@
+let humanScore=0;
+let computerScore=0;
+
 function getPlayerChoice() {
   let userInput = prompt("Please choose: rock, paper, or scissors");
   return userInput.toLowerCase();
